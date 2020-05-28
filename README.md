@@ -12,9 +12,9 @@ steps:
 - uses: robin-thomas-e1391/PR-title-validator@master
   with:
     regex: '([a-z])+\/([a-z])+' # Regex the title should match.
-    regexOptions: 'i' # Regex should be case insensitive.
-    cutomNonMatchErrorMsg: 'valid title options are ...' # Custom error message if regex fails.
-    allowed_prefixes: 'feature,stable,fix' # title should start with the given prefix
+    regex_options: 'i' # Regex should be case insensitive.
+    custom_non_match_error: 'valid title options are ...' # Custom error message if regex fails.
+    allowed_prefixes: 'fix,feat,chore' # title should start with the given prefix
     prefix_case_sensitive: false # title prefix are case insensitive
     min_length: 5 # Min length of the title
     max_length: 20 # Max length of the title

@@ -18,11 +18,11 @@ inputs:
     description: 'Max length of title. -1 to ignore the rule'
     default: -1
   custom_non_match_error:
-    description: 'Max length of title. -1 to ignore the rule'
+    description: 'Custom error text to show if regex does not match'
     required: false
     default: ''
   regex_options:
-    description: 'Max length of title. -1 to ignore the rule'
+    description: 'regex options to match like i(case-insensitive),g'
     required: false
     default: ''
 
