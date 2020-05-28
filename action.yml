@@ -1,4 +1,4 @@
-name: 'Validate title of pull requests'
+name: 'PR title validator'
 description: 'Github action to enforce Pull Request title conventions'
 author: 'robin'
 inputs:
@@ -26,5 +26,5 @@ runs:
   using: 'node12'
   main: 'index.js'
 branding:
-  icon: 'alert-triangle'
-  color: 'gray-dark'
+  icon: 'check-square'
+  color: 'green'

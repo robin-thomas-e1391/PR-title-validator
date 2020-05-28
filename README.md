@@ -9,7 +9,7 @@ See [action.yml](./action.yml)
 
 ```yaml
 steps:
-- uses: deepakputhraya/action-pr-title@master
+- uses: robin-thomas-e1391/PR-title-validator@master
   with:
     regex: '([a-z])+\/([a-z])+' # Regex the title should match.
     regexOptions: 'i' # Regex should be case insensitive.
