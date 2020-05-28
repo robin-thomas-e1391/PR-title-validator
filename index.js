@@ -23,11 +23,11 @@ async function run() {
         const title = github.context.payload.pull_request.title;
         core.info(`Pull Request title: "${title}"`);
         // Check if title pass regex
-        const regex = RegExp(core.getInput('regex'), core.getInput('regexOptions'));
+        const regex = RegExp(core.getInput('regex'), core.getInput('regex_options'));
         core.info(`Regex: ${regex}`);
         if (!regex.test(title)) {
             core.setFailed(`Pull Request title "${title}" failed to pass match regex - ${regex}`);
-            core.info(core.getInput('cutomNonMatchErrorMsg'));
+            core.info(core.getInput('cutom_non_match_error'));
             return
         }
 

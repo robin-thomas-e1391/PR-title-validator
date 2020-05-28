@@ -1,14 +1,14 @@
 name: 'PR title validator'
 description: 'Github action to enforce Pull Request title conventions'
-author: 'robin'
+author: 'Robin'
 inputs:
   regex:
     description: 'Regex to validate the pull request title'
     default: '.+'
-  regexOptions: 'regex options i,g etc...'
-    default: ''
-  cutomNonMatchErrorMsg: 'custom error text to show when regex not matched'
-    default: ''
+  regex_options: 'regex options i,g etc...'
+    default: false
+  cutom_non_match_error: 'custom error text to show when regex not matched'
+    default: false
   allowed_prefixes:
     description: 'Comma separated list of prefix allowed to be used in title. eg: feature,hotfix,JIRA-'
     default: ''
@@ -21,7 +21,6 @@ inputs:
   max_length:
     description: 'Max length of title. -1 to ignore the rule'
     default: -1
-
 runs:
   using: 'node12'
   main: 'index.js'
