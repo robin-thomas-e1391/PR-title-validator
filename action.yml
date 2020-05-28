@@ -6,9 +6,9 @@ inputs:
     description: 'Regex to validate the pull request title'
     default: '.+'
   regex_options: 'regex options i,g etc...'
-    default: false
+    default: ''
   cutom_non_match_error: 'custom error text to show when regex not matched'
-    default: false
+    default: ''
   allowed_prefixes:
     description: 'Comma separated list of prefix allowed to be used in title. eg: feature,hotfix,JIRA-'
     default: ''
