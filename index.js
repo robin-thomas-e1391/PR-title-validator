@@ -27,7 +27,7 @@ async function run() {
         core.info(`Regex: ${regex}`);
         if (!regex.test(title)) {
             core.setFailed(`Pull Request title "${title}" failed to pass match regex - ${regex}`);
-            core.info(core.getInput('cutom_non_match_error'));
+            core.info(core.getInput('custom_non_match_error'));
             return
         }
 

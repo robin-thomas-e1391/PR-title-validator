@@ -17,6 +17,14 @@ inputs:
   max_length:
     description: 'Max length of title. -1 to ignore the rule'
     default: -1
+  custom_non_match_error:
+    description: 'Max length of title. -1 to ignore the rule'
+    required: false
+    default: ''
+  regex_options:
+    description: 'Max length of title. -1 to ignore the rule'
+    required: false
+    default: ''
 
 runs:
   using: 'node12'
