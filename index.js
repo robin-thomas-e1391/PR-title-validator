@@ -21,7 +21,7 @@ async function run() {
         }
 
         const title = core.getInput('custom_input') || github.context.payload.pull_request.title;
-        core.info(`Pull Request title: "${title}"`);
+        core.info(`title: "${title}"`);
         // Check if title pass regex
         const regex = RegExp(core.getInput('regex'), core.getInput('regex_options'));
         core.info(`Regex: ${regex}`);
