@@ -25,6 +25,10 @@ inputs:
     description: 'regex options to match like i(case-insensitive),g'
     required: false
     default: ''
+  custom_input:
+    description: 'custom input to check regex on.'
+    required: false
+    default: ''
 
 runs:
   using: 'node12'
